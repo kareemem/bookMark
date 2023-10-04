@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BookMark</title>
+    <link rel="icon" href="img/free-bookmark-ribbon-mark-favourite-tick-marker-7-3237.webp">
+    <!--icon  -->
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+            integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="bs/bootstrap.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="assigment.css">
+</head>
+<body>
+    <section id="header" class="position-relative d-flex">
+        <!-- <dialog open class="test"><div class="te"><p>This is an open dialog window</p></div></dialog> -->
+        <dialog  class="dial"><p id="pDia"></p>
+        <button id="hide" class="btn btn-outline-info" onclick="hideDia()">done</button></dialog>
+        <div class="contentHead container-lg text-center pt-5 k">
+            <h1 class="my-5 position-relative">Bookmarker</h1>
+            <div class="sites py-5 ">
+                <h2><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark"></i></h2>
+                <div class="input text-start mt-5">
+                    <label class="d-block" for="siteName"><i class="fa-solid fa-book-bookmark"></i> Site Name</label>
+                    <input class="d-block w-100 form-control" type="text" id="siteName" placeholder="Bookmark Name">
+                    <label class="d-block mt-4" for="siteUrl"><i class="fa-solid fa-link"></i> Site URL</label>
+                    <input class="d-block w-100 form-control" type="url" id="SiteUrl" placeholder="Website URL">
+                    <div class="text-center mt-4">         
+                        <button class="btn px5 but" onclick="aadWebSite()">submit</button>
+                    </div>
+                </div>
+            </div>
+            <div class=" m-auto my-4">
+                <table class="table">
+                    <thead>
+                        <th>index</th>
+                        <th>Website Name</th>
+                        <th>Visit</th>
+                        <th>Delete</th>
+                    </thead>
+                    <tbody id="tableBody">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section> 
+    <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+    <script src="js/assigment3.js"></script>
+</body>
+</html>

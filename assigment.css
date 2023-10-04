@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(247, 236, 222);
+}
+
+.contentHead h1{
+    font-family: 'Pacifico', cursive;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 60px;
+    color: #352e28;
+    display:inline-block;
+}
+
+.contentHead h1::before {
+    content: "";
+    height: 35%;
+    width: 100%;
+    background-color: #fec260;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    transition-duration: .5s;
+    transition-delay: .3s;
+    
+}
+.contentHead h1:hover::before{
+    height: 70%;
+}
+
+.sites{
+    border: 2px dotted black;
+    border-left: none;
+    border-right: none;
+    
+}
+
+.sites h2 {
+    font-family: 'Righteous', cursive;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 500;
+    color:transparent;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+}
+.input label {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #212529;
+    font-family: 'PT Sans Caption', sans-serif;
+}
+.input label i{
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 16px;
+    color: #212529;
+    margin-right: 10px;
+}
+
+.input input{
+    height: 35px;
+    padding: 5px;
+    border-radius: 7px;
+    border: 2px solid #ced4da;
+    padding-left: 15px;
+    font-weight: 500;
+    margin-top: 10px;
+    
+
+}
+.input input:focus{
+    outline: none;
+    box-shadow: 0px 0px 5px 2px gold;
+    border-color:rgb(217, 156, 57) ;
+
+}
+
+.but{
+    background-color: #d1512d;
+    width: 150px;
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 400;
+    color: white;
+    transition-duration: .5s;
+    transition-delay: .3s;
+
+}
+
+.but:hover{
+    background-color: #bb4120;
+    color: white;
+}
+
+
+
+
+.dial{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    background-color: rgb(90, 38, 38);
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-align: center;
+}
+#hide{
+    color: white;
+}
+
+
+
+
+
+
